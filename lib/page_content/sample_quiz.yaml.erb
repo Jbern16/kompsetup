@@ -1,0 +1,159 @@
+page_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+template: "quiz"
+seconds_to_calculate: 6
+seconds_to_redirect: 20
+classes: "test-class"
+splash:
+  format: splash_v1
+  title: "Heres A Quiz Title!"
+  intro_img: "quiz_base.png"
+  intro_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+  intro_button_text: "Take the Quiz!"
+status:
+  title: ""
+  description: ""
+calculation:
+  format: calculation_v1
+  header: "Hang Tight!"
+  text: "Hang tight, we’re caculating something important...."
+complete:
+  format:  complete_v1
+  header: 'Congratulations!'
+  complete_img: "quiz_base.png"
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing"
+  link_text: "Get 15% Off Your First Purchase"
+sequences:
+  - order: 1
+    has_variants: false
+    classes: 'title-left'
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: "Lorem ipsum dolor sit amet:"
+        answer_alignment: centered
+        answers:
+          - format: long_text
+            text: "A) Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet"
+            value: "value1"
+          - format: long_text
+            text: "B) Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet"
+            value: "value2"
+          - format: long_text
+            text: "C) Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet"
+            value: "value3"
+          - format: long_text
+            text: "D) Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet"
+            value: "value4"
+  - order: 2
+    has_variants: false
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment: centered
+        answers:
+          - format: circle_icon
+            go_to_variant: "A"
+            icon: "icon-checkmark"
+            text: "Yes"
+          - format: circle_icon
+            go_to_variant: "B"
+            icon: "icon-cross"
+            text: "No"
+  - order: 3
+    has_variants: true
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment:
+        answers:
+          - format: oval_icon
+            go_to_variant: "A"
+            text: "Lorem ipsum dolor"
+          - format: oval_icon
+            go_to_variant: "A"
+            text: "Lorem ipsum dolor"
+          - format: oval_icon
+            go_to_variant: "A"
+            text: "Lorem ipsum dolor"
+  - order: 4
+    has_variants: false
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment: centered
+        answers:
+          - format: square_icon
+            go_to_variant: "A"
+            icon: icon-home2
+            text: "1 Month - 6 Months"
+          - format: square_icon
+            go_to_variant: "A"
+            icon: icon-key
+            text: "6 Months -1 Year"
+          - format: square_icon
+            go_to_variant: "A"
+            icon: icon-checkmark2
+            text: "1 Year+"
+  - order: 5
+    has_variants: false
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment: centered
+        answers:
+          - format: radio_full_width
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing."
+          - format: radio_full_width
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing."
+          - format: radio_full_width
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing."
+          - format: radio_full_width
+            text: "All of the above."
+  - order: 6
+    has_variants: false
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment: centered
+        answers:
+          - format: full_image
+            image_url: "quiz_base.png"
+            value: "value1"
+          - format: full_image
+            image_url: "quiz_base.png"
+            value: "value2"
+          - format: full_image
+            image_url: "quiz_base.png"
+            value: "value3"
+          - format: full_image
+            image_url: "quiz_base.png"
+            value: "value4"
+  - order: 7
+    has_variants: false
+    questions:
+      - is_variant: false
+        variant_id:
+        prompt: Lorem ipsum dolor sit amet?
+        answer_alignment: centered
+        answers:
+          - format: image_with_text
+            image_url: "quiz_base.png"
+            text: "Lorem ipsum dolor"
+            value: "value1"
+          - format: image_with_text
+            image_url: "quiz_base.png"
+            text: "Lorem ipsum dolor"
+            value: "value2"
+          - format: image_with_text
+            image_url: "quiz_base.png"
+            text: "Lorem ipsum dolor"
+            value: "value3"
+          - format: image_with_text
+            image_url: "quiz_base.png"
+            text: "Lorem ipsum dolor"
+            value: "value4"

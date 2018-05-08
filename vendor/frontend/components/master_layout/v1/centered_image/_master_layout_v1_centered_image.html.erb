@@ -1,0 +1,15 @@
+<div class="ct-component ct-centered-image <%= @content['classes'] %>">
+
+  <div class="inner-ct-component">
+
+    <%- if @content['img_name'] %>
+      <%= image_tag @content['img_name'] %>
+    <% end -%>
+
+    <%- if @content['img_caption'] %>
+      <p class="caption"><%= @content['img_caption'].html_safe %></p>
+    <% end -%>
+
+  </div>
+
+</div>

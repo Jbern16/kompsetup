@@ -1,0 +1,42 @@
+page_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+template: "master_layout"
+classes: "test-class"
+content:
+  -
+    type: 'headers/slide_in_header'
+    cta_text: "Click Here Now"
+    header_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    cta_link: "https://www.google.com/"
+  -
+    type: 'headers/header_with_links'
+    img: "logo.png"
+    links:
+      - text: "Click Here"
+        link: "https://www.google.com/"
+      - text: "Click Here"
+        link: "https://www.google.com/"
+  -
+    type: 'page_title'
+    page_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  -
+    type: 'left_text'
+    text: "<p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  -
+    type: 'centered_image'
+    img_name: "http://via.placeholder.com/1200x900"
+    img_caption: "John Doe <a href='<%= @cta_link %>'>John Doe</a>"
+  -
+    type: 'blockquote'
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    byline: "John Doe"
+    text: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  -
+    type: 'left_text'
+    text: "<h3>Section Title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  -
+    type: 'centered_cta'
+    text: 'Click Here Today!'
+  -
+    type: 'footers/fixed_mobile_cta'
+    cta_text: "Click Here Now"
+    cta_link: "<%= @cta_link %>"

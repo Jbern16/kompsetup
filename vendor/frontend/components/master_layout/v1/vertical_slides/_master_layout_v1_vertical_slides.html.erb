@@ -1,0 +1,67 @@
+<div class="ct-component ct-vertical-slides <%= @content['classes'] %>">
+  <div class="inner-ct-component">
+    <div class='vertical-slides-left'>
+
+      <section class='menu'>
+        <% @content['slides'].each_with_index do |slide, index| %>
+          <%= image_tag slide['desktop_image'], class: "menu-img #{'active' if index == 0}", data: {index: index} %>
+        <% end %>
+      </section>
+
+      <section class="showcase js-slick-vertical-slides">
+        <% @content['slides'].each_with_index do |slide, index| %>
+          <div class="vertical-slide">
+            <%= image_tag slide['desktop_image'], class: "dt-img" %>
+            <%= image_tag slide['mobile_image'], class: "mobile-img" %>
+          </div>
+        <% end %>
+      </section>
+    </div>
+
+    <div class='vertical-slides-right'>
+      <section class="text-@content">
+        <h4 class="title"><%= @content['title'] %></h4>
+        <p class="description"><%= @content['description'] %></p>
+      </section>
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+// $(document).on('ready', function(event) {
+//   $('.js-slick-vertical-slides').slick({
+//     arrows: false,
+//     draggable: false,
+//     swipe: false,
+//     infinite: true,
+//     dots: false,
+//     speed: 400,
+//     autoplay: true,
+//     autoplaySpeed: 2000,
+//     responsive: [{
+//       breakpoint: 778,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         swipe: true,
+//         infinite: true,
+//         dots: true
+//         //   draggable: false,
+//         //   slidesToShow: 1.3,
+//         //   variableWidth: false
+//       }
+//     }]
+//   }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+//     $('.menu-img').removeClass('active')
+//     $('.menu-img[data-index=' + nextSlide + ']').addClass('active')
+//   });
+
+//   $('.menu-img').off('click')
+//   $('.menu-img').on('click', function(){
+//     $(".js-slick-vertical-slides").slick('slickGoTo', $(this).data('index'));
+//   })
+// })
+
+</script>

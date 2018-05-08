@@ -1,0 +1,241 @@
+page_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+template: "master_layout"
+classes: "test-class"
+content:
+  -
+    type: "modals/fullscreen_modal"
+    exit: true
+    headline: "Heres Is a Full Screen Modal"
+    subheadline: "It appeared on exit intent, consectetur adipiscing elit. Cras non posuere est"
+    cta_link: "<%= @cta_link %>"
+    cta_text: "Click Here Now"
+  -
+    type: "headers/slide_in_header"
+    cta_text: "Click Here Now"
+    header_title: "This is a slide in header. Lorem ipsum dolor sit amet."
+  -
+    type: 'headers/header_with_links'
+    img: "logo.png"
+    links:
+      - text: "Click Here"
+        link: "https://www.google.com/"
+      - text: "Click Here"
+        link: "https://www.google.com/"
+  -
+    type: 'hero'
+    img_name: ''
+    background_img: 'http://via.placeholder.com/150x50'
+    mobile_img_name: 'http://via.placeholder.com/150x50'
+    class: 'test'
+    title: 'Here is a hero section consectetur adipiscing elit'
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+    btn_text: "Click Here Now"
+  -
+    type: "page_title"
+    page_title: Here is the page title
+  -
+    type: 'press'
+    title: 'PRESS LOGOS'
+    outlets:
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+      - img: "http://via.placeholder.com/150x50"
+  -
+    type: 'image_and_text'
+    image: "http://via.placeholder.com/700x700"
+    title: "Image and text"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+  -
+    type: 'image_and_text'
+    image: "http://via.placeholder.com/700x700"
+    title: "Lorem ipsum dolor sit"
+    text: "Image and text with class 'reverse' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+    classes: "reverse"
+  -
+    type: 'text_hero'
+    title: "Lorem ipsum dolor sit amet<br>This is a text hero"
+    image: "http://via.placeholder.com/1400x500"
+    image_mobile: "http://via.placeholder.com/800x500"
+    btn_text: "CLICK NOW"
+  -
+    type: 'columns'
+    class: centered
+    title: "Here is a column section with 'tiles'"
+    columns:
+      -
+        type: tile
+        pre_title: Lorem ipsum dolor sit amet
+        title: $500
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+      -
+        type: tile
+        pre_title: Lorem ipsum dolor sit amet, consectetur
+        title: $500
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+  -
+    type: 'columns'
+    class: three
+    title: "Here is a columns section with 'cards'"
+    columns:
+      -
+        type: card
+        pre_title: Lorem ipsum
+        title: Lorem ipsum dolor sit amet, consectetur adipiscing
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+        img_name: "http://via.placeholder.com/700x700"
+      -
+        type: card
+        pre_title: Lorem ipsum
+        title: Lorem ipsum dolor sit amet, consectetur adipiscing
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+        img_name: "http://via.placeholder.com/700x700"
+      -
+        type: card
+        pre_title: Lorem ipsum
+        title: Lorem ipsum dolor sit amet, consectetur adipiscing
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus."
+        img_name: "http://via.placeholder.com/700x700"
+  -
+    type: "vertical_slides"
+    title: "This is a vertical slides section"
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elitticsLorem ipsum dolor sit amet, consectetur adipiscing elittics"
+    slides:
+      - desktop_image: "http://via.placeholder.com/1200x1200"
+        mobile_image: "http://via.placeholder.com/700x700"
+      - desktop_image: "http://via.placeholder.com/1200x1200"
+        mobile_image: "http://via.placeholder.com/700x700"
+      - desktop_image: "http://via.placeholder.com/1200x1200"
+        mobile_image: "http://via.placeholder.com/700x700"
+      - desktop_image: "http://via.placeholder.com/1200x1200"
+        mobile_image: "http://via.placeholder.com/700x700"
+      - desktop_image: "http://via.placeholder.com/1200x1200"
+        mobile_image: "http://via.placeholder.com/700x700"
+  -
+    type: 'centered_image'
+    img_name: "http://via.placeholder.com/1200x900"
+    img_caption: "Centered Image <a href='<%= @cta_link %>'>John Doe</a>"
+  -
+    type: 'video_hero'
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+    video_name: "https://s3.amazonaws.com/placeholderimages/sample"
+    dt_poster: "http://via.placeholder.com/1200x900"
+  -
+    type: 'blockquote'
+    quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    byline: "Block quote"
+  -
+    type: 'compare_table'
+    title: 'Why are we different?'
+    category_title: "Category"
+    brand: 'Us'
+    other_title: 'Them'
+    brand_image: "http://via.placeholder.com/200x200"
+    other_image: "http://via.placeholder.com/200x200"
+    features:
+      -
+        feature_title: "Lorem ipsum dolor sit amet"
+      -
+        feature_title: "consectetur adipiscing elit"
+      -
+        feature_title: "incididunt ut labore et dolore magna aliqua"
+      -
+        feature_title: "sed do eiusmod tempor"
+  -
+    type: "floating_video"
+    vimeo_link: "https://player.vimeo.com/video/261284403"
+  -
+    type: 'testimonials'
+    title: "Here is a Testimonial Section"
+    testimonials:
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        author: "John Doe"
+        date: "Anytown, USA"
+        stars: 5
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        author: "Jane Doe"
+        date: "about 19 hours ago"
+        stars: 5
+      -
+        quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        author: "John Doe"
+        date: "Anytown, USA"
+        stars: 5
+
+  -
+    type: 'left_text'
+    text: "<h3>Left text section</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+  -
+    type: "centered_text"
+    text: "Centered Text dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus. Curabitur ornare dolor nec porta luctus. Mauris lacinia nibh eget rhoncus tristique. Aliquam rutrum risus eget scelerisque interdum. In hac habitasse platea dictumst. Proin elementum, lorem ut venenatis maximus, erat augue lacinia tortor, quis maximus neque ante vitae dui. Aenean fringilla laoreet neque, eget dapibus neque efficitur non. Fusce sodales, orci quis tincidunt tincidunt, turpis neque fringilla ex, lobortis feugiat enim dui eu tortor."
+  -
+    type: "list_item"
+    classes: "left"
+    img_name: "http://via.placeholder.com/1200x900"
+    title: "1. This is a list item to the left!"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus. Curabitur ornare dolor nec porta luctus. Mauris lacinia nibh eget rhoncus tristique. Aliquam rutrum risus eget scelerisque interdum. In hac habitasse platea dictumst. Proin elementum, lorem ut venenatis maximus, erat augue lacinia tortor, quis maximus neque ante vitae dui."
+  -
+    type: "list_item"
+    classes: "right"
+    img_name: "http://via.placeholder.com/1200x900"
+    title: "2. This is a list item to the right!"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus. Curabitur ornare dolor nec porta luctus. Mauris lacinia nibh eget rhoncus tristique. Aliquam rutrum risus eget scelerisque interdum. In hac habitasse platea dictumst. Proin elementum, lorem ut venenatis maximus, erat augue lacinia tortor, quis maximus neque ante vitae dui."
+  -
+    type: "list_item"
+    classes: "stacked"
+    img_name: "http://via.placeholder.com/1200x900"
+    title: "3. This is a list item that is stacked!"
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est, eu aliquam dui. Vivamus nec sodales metus. Curabitur ornare dolor nec porta luctus. Mauris lacinia nibh eget rhoncus tristique. Aliquam rutrum risus eget scelerisque interdum. In hac habitasse platea dictumst. Proin elementum, lorem ut venenatis maximus, erat augue lacinia tortor, quis maximus neque ante vitae dui."
+  -
+    type: 'icon_rows'
+    title: 'Icon Rows Section'
+    rows:
+      -
+        icon_groups:
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+      -
+        icon_groups:
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+          - img_name: 'http://via.placeholder.com/200x200'
+            title: Lorem ipsum dolor
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras non posuere est."
+  -
+    type: 'centered_cta'
+    lead: 'Centered CTA Section'
+    text: 'Click here now'
+  -
+    type: 'footers/logo_footer'
+    cta_link: "<%= @cta_link %>"
+    img: "logo.png"
+    links:
+      - text: "About"
+        url: "https://www.google.com/"
+      - text: "FAQ"
+        url: "https://www.google.com/"
+      - text: "Terms"
+        url: "https://www.google.com/"
+  -
+    type: 'footers/fixed_mobile_cta'
+    cta_text: "Mobile Fixed CTA"
+    cta_link: "<%= @cta_link %>"

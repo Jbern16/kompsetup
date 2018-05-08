@@ -1,0 +1,8 @@
+<header data-controller="shared-v1-slide-in-header" class="headline-header slide-in-header <%= @content['classes'] %>">
+  <div class="inner-header">
+    <p class="article-title"><%= @content['header_title'] %></p>
+    <% if @content['cta_text'] %>
+      <%= link_to @content['cta_text'], @content['cta_link'] || @cta_link, class: "cta-link" %>
+    <% end %>
+  </div>
+</header>

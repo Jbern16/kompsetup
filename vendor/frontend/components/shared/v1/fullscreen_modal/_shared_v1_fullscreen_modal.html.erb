@@ -1,0 +1,23 @@
+<div id="<%= 'bio_ep' if @content['exit'] %>" class="fullscreen-modal <%= @content['classes'] %>">
+
+  <%= link_to "✖", "#", id: "bio_ep_close", class: "js-modal-close modal-close-btn", onclick: "$('.fullscreen-modal').removeClass('visible'); return false;" %>
+
+  <div class="inner-modal">
+    <h2 class="modal-headline"><%= @content['headline'] %><h2>
+    <h3 class="subheadline"><%= @content['subheadline'] %></h3>
+
+    <%= link_to @content['cta_text'], @content['cta_link'] || @cta_link, class: "modal-cta-btn track-cta" %>
+  </div>
+
+</div>
+
+<% if @content['exit'] %>
+  <script>
+    $(document).on('ready', function(event) {
+      bioEp.init({
+        css: '#bio_ep',
+        cookieExp: 0
+      });
+    })
+  </script>
+<% end %>

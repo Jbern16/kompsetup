@@ -1,0 +1,26 @@
+<div class="ct-component ct-list-item <%= @content['classes'] %>">
+  <div class="inner-ct-component">
+
+    <div class="content">
+      <% if @content['img_name'] %>
+        <%= image_tag @content['img_name'] %>
+      <% elsif @content['alt_content'] %>
+        <div class="alt-content">
+          <%= @content['alt_content'].html_safe %>
+        </div>
+      <% end %>
+    </div>
+
+    <div class='copy'>
+      <% if @content['title'].present? %>
+        <p class="title"><%= @content['title'].html_safe %></p>
+      <% end %>
+
+      <% if @content['text'].present? %>
+        <div class="text"><%= @content['text'].html_safe %></div>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>

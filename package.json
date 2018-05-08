@@ -1,0 +1,19 @@
+{
+  "name": "kompsetup",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "3.4",
+    "expose-loader": "^0.7.5",
+    "headroom.js": "^0.9.4",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.3.1",
+    "sass-loader": "^7.0.1",
+    "slick-carousel": "^1.8.1",
+    "stimulus": "^1.0.1",
+    "webpack-merge": "^4.1.0"
+  },
+  "devDependencies": {
+    "script-loader": "^0.7.2",
+    "webpack-dev-server": "2.11.2"
+  }
+}
