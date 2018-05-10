@@ -3,18 +3,18 @@ template: "master_layout"
 classes: "test-class"
 content:
   -
-    type: "modals/fullscreen_modal"
+    type: "fullscreen_modal"
     exit: true
     headline: "Heres Is a Full Screen Modal"
     subheadline: "It appeared on exit intent, consectetur adipiscing elit. Cras non posuere est"
     cta_link: "<%= @cta_link %>"
     cta_text: "Click Here Now"
   -
-    type: "headers/slide_in_header"
+    type: "slide_in_header"
     cta_text: "Click Here Now"
     header_title: "This is a slide in header. Lorem ipsum dolor sit amet."
   -
-    type: 'headers/header_with_links'
+    type: 'header_with_links'
     img: "logo.png"
     links:
       - text: "Click Here"
@@ -225,7 +225,7 @@ content:
     lead: 'Centered CTA Section'
     text: 'Click here now'
   -
-    type: 'footers/logo_footer'
+    type: 'logo_footer'
     cta_link: "<%= @cta_link %>"
     img: "logo.png"
     links:
@@ -236,6 +236,6 @@ content:
       - text: "Terms"
         url: "https://www.google.com/"
   -
-    type: 'footers/fixed_mobile_cta'
+    type: 'fixed_mobile_cta'
     cta_text: "Mobile Fixed CTA"
     cta_link: "<%= @cta_link %>"

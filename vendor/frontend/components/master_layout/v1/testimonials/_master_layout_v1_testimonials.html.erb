@@ -1,4 +1,4 @@
-<div class="ct-component ct-testimonials <%= @content['classes'] %>">
+<div data-controller="master-layout-v1-testimonials" class="ct-component ct-testimonials <%= @content['classes'] %>">
 
   <div class="inner-ct-component">
 
@@ -31,32 +31,4 @@
       <% end %>
     </div>
   </div>
-
 </div>
-
-<script>
-
-  $(document).on('ready', function(event) {
-    $('.testimonials-slider').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: true,
-      draggable: true,
-      infinite: true,
-      dots: false,
-      autoplay: false,
-      autoplaySpeed: 2000,
-      responsive: [
-        {
-          breakpoint: 778,
-          settings: {
-            swipe: true,
-            arrows: false,
-            dots: true
-          }
-        }
-      ]
-    });
-  });
-
-</script>

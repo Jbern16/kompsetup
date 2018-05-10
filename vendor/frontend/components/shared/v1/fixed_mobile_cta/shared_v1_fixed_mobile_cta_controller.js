@@ -4,8 +4,7 @@ import 'imports-loader?window.jQuery=jquery!../../../../../../node_modules/headr
 
 export default class extends Controller {
   connect() {
-    console.log('HII')
-    $(".slide-in-header").headroom({
+    $(".fixed-mobile-cta").headroom({
       offset : 220,
       tolerance : 0,
       tolerance : {

@@ -1,23 +1,5 @@
-<footer class="fixed-mobile-cta <%= @content['classes'] %>">
+<footer data-controller="shared-v1-fixed-mobile-cta" class="fixed-mobile-cta <%= @content['classes'] %>">
   <%= link_to @content['cta_text'], @content['cta_link'] || @cta_link, class: "fixed-mobile-cta-btn" %>
 </footer>
 
-<script>
-// $(document).on('ready', function(event) {
-//   $(".fixed-mobile-cta").headroom({
-//     offset : 220,
-//     tolerance : 0,
-//     tolerance : {
-//       up : 5,
-//       down : 0
-//     },
-//     classes : {
-//       initial : "headroom",
-//       top : "headroom--top",
-//       notTop : "headroom--not-top",
-//     },
-
-//   });
-// })
-</script>
 

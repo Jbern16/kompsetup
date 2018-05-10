@@ -1,4 +1,4 @@
-<div class="ct-component ct-vertical-slides <%= @content['classes'] %>">
+<div data-controller="master-layout-v1-vertical-slides" class="ct-component ct-vertical-slides <%= @content['classes'] %>">
   <div class="inner-ct-component">
     <div class='vertical-slides-left'>
 
@@ -26,42 +26,3 @@
     </div>
   </div>
 </div>
-
-
-<script>
-
-// $(document).on('ready', function(event) {
-//   $('.js-slick-vertical-slides').slick({
-//     arrows: false,
-//     draggable: false,
-//     swipe: false,
-//     infinite: true,
-//     dots: false,
-//     speed: 400,
-//     autoplay: true,
-//     autoplaySpeed: 2000,
-//     responsive: [{
-//       breakpoint: 778,
-//       settings: {
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         swipe: true,
-//         infinite: true,
-//         dots: true
-//         //   draggable: false,
-//         //   slidesToShow: 1.3,
-//         //   variableWidth: false
-//       }
-//     }]
-//   }).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-//     $('.menu-img').removeClass('active')
-//     $('.menu-img[data-index=' + nextSlide + ']').addClass('active')
-//   });
-
-//   $('.menu-img').off('click')
-//   $('.menu-img').on('click', function(){
-//     $(".js-slick-vertical-slides").slick('slickGoTo', $(this).data('index'));
-//   })
-// })
-
-</script>
