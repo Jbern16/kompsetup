@@ -17,8 +17,8 @@ environment.plugins.prepend('Provide',
 const SassLoader = environment.loaders.find(el => el.key === 'sass').value.use.find(el => el.loader == 'sass-loader')
 
 const variables = {
-  data: '@import "reset.scss"; @import "mixins.scss"; @import "colors.scss"; @import "type.scss";',
-  includePaths: [ path.resolve(__dirname, "../../vendor/frontend/base/"), path.resolve(__dirname, "../../frontend/company/")]
+  data: '@import "~sheridan_bp/frontend/base/reset.scss"; @import "~sheridan_bp/frontend/base/mixins.scss"; @import "colors.scss"; @import "type.scss";',
+  includePaths: [path.resolve(__dirname, "../../frontend/company/")]
 }
 
 const config = environment.toWebpackConfig()

@@ -1,1 +1,0 @@
-import "components/shared/v1";

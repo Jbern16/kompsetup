@@ -1,1 +1,0 @@
-import './master_layout.scss'
