@@ -17,7 +17,7 @@ environment.plugins.prepend('Provide',
 const SassLoader = environment.loaders.find(el => el.key === 'sass').value.use.find(el => el.loader == 'sass-loader')
 
 const variables = {
-  data: '@import "~sheridan_bp/frontend/base/reset.scss"; @import "~sheridan_bp/frontend/base/mixins.scss"; @import "colors.scss"; @import "type.scss";',
+  data: '@import "~frontend/base/reset.scss"; @import "~frontend/base/mixins.scss"; @import "colors.scss"; @import "type.scss";',
   includePaths: [path.resolve(__dirname, "../../frontend/company/")]
 }
 

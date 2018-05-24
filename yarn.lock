@@ -2285,6 +2285,10 @@ from2@^2.1.0:
     inherits "^2.0.1"
     readable-stream "^2.0.0"
 
+"frontend@git+ssh://git@github.com:jbern16/frontend.git":
+  version "1.0.0"
+  resolved "git+ssh://git@github.com:jbern16/frontend.git#6e3f0514cbd6e030afc35557c22e8906ac475090"
+
 fs-extra@^0.30.0:
   version "0.30.0"
   resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-0.30.0.tgz#f233ffcc08d4da7d432daa449776989db1df93f0"
@@ -5195,10 +5199,6 @@ shebang-command@^1.2.0:
 shebang-regex@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/shebang-regex/-/shebang-regex-1.0.0.tgz#da42f49740c0b42db2ca9728571cb190c98efea3"
-
-"sheridan_bp@git+ssh://git@github.com:Andrewglass1/sheridan_bp.git#komponents":
-  version "1.0.0"
-  resolved "git+ssh://git@github.com:Andrewglass1/sheridan_bp.git#a8917eedadf8224f7fb26b956afbe695ae47bff7"
 
 signal-exit@^3.0.0:
   version "3.0.2"
